@@ -1,0 +1,71 @@
+ /* Add the following styles */
+
+:root {
+  --primary-color: #8e44ad;
+  --secondary-color: #2ecc71;
+  --accent-color: #e67e22;
+  --background-color: #f0f0f0;
+}
+
+/* Hover effect for monster cards */
+.monster-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.monster-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Background and font styles */
+body {
+  font-family: 'Permanent Marker', cursive;
+  background-color: #f0f0f0;
+  color: #4d4d4d;
+}
+
+.App-header {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.search-box,
+.sort-buttons button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #4d4d4d;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1rem;
+}
+
+.sort-buttons button {
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+}
+
+/* Monster list layout */
+.monster-list {
+  display: flex; /* Use flexbox for row layout */
+  flex-wrap: wrap; /* Allow wrapping to the next row if needed */
+  justify-content: center; /* Center the items horizontally */
+  gap: 1rem; /* Add spacing between items */
+  padding: 1rem;
+}
+
+.monster-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
